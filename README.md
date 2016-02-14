@@ -5,7 +5,7 @@ build tools.  Specific objectives include:
 - Use [Angular2][] 
 - Use [TypeScript][]
 - Use a module loading system
-- One package manager (eg. No [Bower][] and [NPM][])
+- One package manager (eg. No [Bower][] _and_ [NPM][])
 - Emphasis on [ES6][] compatibility
 - Interop with [Gulp][]
 
@@ -41,3 +41,7 @@ To view this POC locally, please do the following
 2. Run `http-server` in the root of the project
 
 3. Load `localhost:8080` in your browser
+
+4. ???
+
+5. Profit
