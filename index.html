@@ -2,17 +2,20 @@
 <html>
 
   <head>
-    <script src="//cdn.rawgit.com/systemjs/systemjs/0.19.4/dist/system.js"></script>
-    <script src="//code.angularjs.org/2.0.0-alpha.40/angular2.js"></script>
+    <script src="jspm_packages/system.js"></script>
+    <script src="config.js"></script>
+    <!--<script src="jspm_packages/npm/angular2@2.0.0-beta.6/bootstrap.js"></script>-->
+    <!--<script src="//code.angularjs.org/2.0.0-alpha.40/angular2.js"></script>-->
     <script>
-      System.config({
-        transpiler: 'typescript',
-        map: {
-          typescript: '//cdn.rawgit.com/Microsoft/TypeScript/v1.6.2/lib/typescript.js'
-        }
-      });
+      //TODO should be done at build time
+//      System.config({
+//        transpiler: 'typescript',
+//        map: {
+//          typescript: '//cdn.rawgit.com/Microsoft/TypeScript/v1.6.2/lib/typescript.js'
+//        }
+//      });
 
-      System.import('src/app.ts');
+      System.import('src/app');
     </script>
   </head>
 

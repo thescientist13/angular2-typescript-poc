@@ -2,7 +2,7 @@
 This project is intended to be a POC for Angular2 and TypeScript built on top of some new and current JavaScript
 build tools.  Specific objectives include:
 
-- Use [Angular2][] 
+- Use [Angular2][]
 - Use [TypeScript][]
 - Use a module loading system
 - One package manager (eg. No [Bower][] _and_ [NPM][])
@@ -33,7 +33,7 @@ A good article on all the current module loading libraries can be found [here][]
 
 [here]: http://survivejs.com/webpack_react/webpack_compared/
 
-## Running the POC 
+## Running the POC
 To view this POC locally, please do the following
 
 1. If not not installed, install `npm install -g http-server`
@@ -45,3 +45,7 @@ To view this POC locally, please do the following
 4. ???
 
 5. Profit
+
+
+http://chariotsolutions.com/blog/post/typescript-angular2-starter-project-walkthrough-integrating-typescript/
+https://html5hive.org/getting-started-with-angular-2/
