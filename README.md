@@ -1,6 +1,6 @@
 ## Overview
 This project is intended to be a POC for Angular2 and TypeScript built on top of some new and current JavaScript
-build tools.  Specific objectives include:
+build tools.  It is built off of the Angular2 5 minute quick start [tutorial][].  Specific objectives include:
 
 - Use [Angular2][]
 - Use [TypeScript][]
@@ -18,6 +18,7 @@ Tools under consideration
 
 A good article on all the current module loading libraries can be found [here][]
 
+[tutorial]: https://angular.io/docs/ts/latest/quickstart.html
 [Angular2]: https://angular.io/
 [TypeScript]: http://www.typescriptlang.org/
 [Bower]: http://bower.io/
@@ -45,7 +46,3 @@ To view this POC locally, please do the following
 4. ???
 
 5. Profit
-
-
-http://chariotsolutions.com/blog/post/typescript-angular2-starter-project-walkthrough-integrating-typescript/
-https://html5hive.org/getting-started-with-angular-2/

@@ -1,4 +1,4 @@
 .idea
-dest
-jspm_packages
 node_modules
+typings
+app/*.js*

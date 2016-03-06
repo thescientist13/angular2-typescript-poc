@@ -1,26 +1,38 @@
-<!DOCTYPE html>
 <html>
-
   <head>
-    <script src="jspm_packages/system.js"></script>
-    <script src="config.js"></script>
-    <!--<script src="jspm_packages/npm/angular2@2.0.0-beta.6/bootstrap.js"></script>-->
-    <!--<script src="//code.angularjs.org/2.0.0-alpha.40/angular2.js"></script>-->
-    <script>
-      //TODO should be done at build time
-//      System.config({
-//        transpiler: 'typescript',
-//        map: {
-//          typescript: '//cdn.rawgit.com/Microsoft/TypeScript/v1.6.2/lib/typescript.js'
-//        }
-//      });
+    <title>Angular 2 QuickStart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      System.import('src/app');
+    <!-- 1. Load libraries -->
+    <!-- IE required polyfills, in this exact order -->
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+    <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
+
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+
+    <!-- 2. Configure SystemJS -->
+    <script>
+      System.config({
+        packages: {
+          app: {
+            format: 'register',
+            defaultExtension: 'js'
+          }
+        }
+      });
+
+      System.import('app/main')
+        .then(null, console.error.bind(console));
     </script>
   </head>
 
+  <!-- 3. Display the application -->
   <body>
-    <hello-world></hello-world>
+    <my-app>Loading...</my-app>
   </body>
 
 </html>
