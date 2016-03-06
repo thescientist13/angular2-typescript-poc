@@ -37,12 +37,8 @@ A good article on all the current module loading libraries can be found [here][]
 ## Running the POC
 To view this POC locally, please do the following
 
-1. If not not installed, install `npm install -g http-server`
+1. Run `npm start` in the root of the project
 
-2. Run `http-server` in the root of the project
+2. ???
 
-3. Load `localhost:8080` in your browser
-
-4. ???
-
-5. Profit
+3. Profit
