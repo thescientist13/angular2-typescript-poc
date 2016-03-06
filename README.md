@@ -1,8 +1,8 @@
 ## Overview
 This project is intended to be a POC for Angular2 and TypeScript built on top of some new and current JavaScript
-build tools.  Specific objectives include:
+build tools.  It is built off of the Angular2 5 minute quick start [tutorial][].  Specific objectives include:
 
-- Use [Angular2][] 
+- Use [Angular2][]
 - Use [TypeScript][]
 - Use a module loading system
 - One package manager (eg. No [Bower][] _and_ [NPM][])
@@ -18,6 +18,7 @@ Tools under consideration
 
 A good article on all the current module loading libraries can be found [here][]
 
+[tutorial]: https://angular.io/docs/ts/latest/quickstart.html
 [Angular2]: https://angular.io/
 [TypeScript]: http://www.typescriptlang.org/
 [Bower]: http://bower.io/
@@ -33,15 +34,11 @@ A good article on all the current module loading libraries can be found [here][]
 
 [here]: http://survivejs.com/webpack_react/webpack_compared/
 
-## Running the POC 
+## Running the POC
 To view this POC locally, please do the following
 
-1. If not not installed, install `npm install -g http-server`
+1. Run `npm start` in the root of the project
 
-2. Run `http-server` in the root of the project
+2. ???
 
-3. Load `localhost:8080` in your browser
-
-4. ???
-
-5. Profit
+3. Profit

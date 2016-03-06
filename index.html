@@ -1,23 +1,38 @@
-<!DOCTYPE html>
 <html>
-
   <head>
-    <script src="//cdn.rawgit.com/systemjs/systemjs/0.19.4/dist/system.js"></script>
-    <script src="//code.angularjs.org/2.0.0-alpha.40/angular2.js"></script>
+    <title>Angular 2 QuickStart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 1. Load libraries -->
+    <!-- IE required polyfills, in this exact order -->
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+    <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
+
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+
+    <!-- 2. Configure SystemJS -->
     <script>
       System.config({
-        transpiler: 'typescript',
-        map: {
-          typescript: '//cdn.rawgit.com/Microsoft/TypeScript/v1.6.2/lib/typescript.js'
+        packages: {
+          app: {
+            format: 'register',
+            defaultExtension: 'js'
+          }
         }
       });
 
-      System.import('src/app.ts');
+      System.import('app/main')
+        .then(null, console.error.bind(console));
     </script>
   </head>
 
+  <!-- 3. Display the application -->
   <body>
-    <hello-world></hello-world>
+    <my-app>Loading...</my-app>
   </body>
 
 </html>
