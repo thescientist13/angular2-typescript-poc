@@ -40,8 +40,12 @@ A good article on all the current module loading libraries can be found [here][]
 1. Install NodeJS (comes with NPM)
 2. Install gulp globally `npm install -g gulp`
 3. Install dependencies `npm install`
+4. Install typings `node_modules/typings/dist/bin/typings.js install`
 
 ## Running the POC
 To view this POC locally, run `gulp build:develop`
 
 **Note: some of the styles have been commented out in favor of best practices**
+
+## Continuos Integration
+All PRs to this repo will be run against Jenkins.  The build script exectuted is in `bin/build.sh`
