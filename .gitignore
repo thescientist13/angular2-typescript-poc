@@ -1,4 +1,4 @@
 .idea
 node_modules
 typings
-app/*.js*
+src/**/*.js*
