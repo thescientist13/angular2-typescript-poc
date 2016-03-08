@@ -45,3 +45,6 @@ A good article on all the current module loading libraries can be found [here][]
 To view this POC locally, run `gulp build:develop`
 
 **Note: some of the styles have been commented out in favor of best practices**
+
+## Continuos Integration
+All PRs to this repo will be run against Jenkins.  The build script exectuted is in `bin/build.sh`
