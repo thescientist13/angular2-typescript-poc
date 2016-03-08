@@ -29,8 +29,8 @@
     "zone.js": "0.5.15"
   },
   "devDependencies": {
-    "concurrently": "^2.0.0",
-    "lite-server": "^2.1.0",
+    "concurrently": "2.0.0",
+    "lite-server": "2.1.0",
     "gulp": "3.9.1",
     "gulp-sourcemaps": "1.6.0",
     "gulp-task-listing": "1.0.1",
