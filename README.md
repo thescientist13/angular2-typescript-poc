@@ -36,11 +36,12 @@ A good article on all the current module loading libraries can be found [here][]
 
 [here]: http://survivejs.com/webpack_react/webpack_compared/
 
+## Setup
+1. Install NodeJS (comes with NPM)
+2. Install gulp globally `npm install -g gulp`
+3. Install dependencies `npm install`
+
 ## Running the POC
-To view this POC locally, please do the following
+To view this POC locally, run `gulp build:develop`
 
-1. Run `npm start` in the root of the project
-
-2. ???
-
-3. Profit
+**Note: some of the styles have been commented out in favor of best practices**
