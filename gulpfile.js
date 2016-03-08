@@ -2,6 +2,7 @@
 
 var del = require('del');
 var gulp = require('gulp');
+var pipelineValidateCss = require('pipeline-validate-css')();
 var pipelineValidateJs = require('pipeline-validate-js')({linter: 'ESHint'});
 var runSequence = require('run-sequence');
 var sourcemaps = require('gulp-sourcemaps');
@@ -11,6 +12,7 @@ var webserver = require('gulp-webserver');
 
 gulp.task('default', taskListing);
 
+//common build tasks
 gulp.task('clean', function() {
   return del(['dest']);
 });
@@ -31,11 +33,18 @@ gulp.task('clean', function() {
 //    .pipe(gulp.dest('dest/vendor/'));
 //});
 
-gulp.task('lint:gulpfile', function() {
+//linting
+gulp.task('lint:js', function() {
   return gulp.src('*.js')
     .pipe(pipelineValidateJs.validateJS());
 });
 
+gulp.task('lint:css', function() {
+  return gulp.src('src/components/**/*.css')
+    .pipe(pipelineValidateCss.validateCSS());
+});
+
+//build tasks
 gulp.task('build:ts', function() {
   var tsProject = typescript.createProject('tsconfig.json', {typescript: require('typescript')});
 
@@ -46,7 +55,7 @@ gulp.task('build:ts', function() {
     .pipe(gulp.dest('./'));
 });
 
-//serve + watch
+//development tasks
 gulp.task('serve', function() {
   return gulp.src('./')
     .pipe(webserver({
@@ -66,10 +75,10 @@ gulp.task('watch', function () {
 
 //main development build task
 gulp.task('build:develop', function() {
-  return runSequence('clean', ['build:ts'], ['serve', 'watch']);
+  return runSequence('clean', ['lint:css'], ['build:ts'], ['serve', 'watch']);
 });
 
 //main production build task
 gulp.task('build:prod', function() {
-  return runSequence('clean', ['lint:gulpfile', 'build:ts']);
+  return runSequence('clean', ['lint:js', 'lint:css'], ['build:ts']);
 });

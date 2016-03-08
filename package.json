@@ -36,6 +36,7 @@
     "gulp-task-listing": "1.0.1",
     "gulp-typescript": "2.12.1",
     "gulp-webserver": "0.9.1",
+    "pipeline-validate-css": "^0.3.0",
     "pipeline-validate-js": "0.3.2",
     "run-sequence": "1.1.5",
     "typescript": "1.8.2",
