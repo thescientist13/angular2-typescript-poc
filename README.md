@@ -40,6 +40,7 @@ A good article on all the current module loading libraries can be found [here][]
 1. Install NodeJS (comes with NPM)
 2. Install gulp globally `npm install -g gulp`
 3. Install dependencies `npm install`
+4. Install typings `npm run typings install`
 
 ## Running the POC
 To view this POC locally, run `gulp build:develop`
