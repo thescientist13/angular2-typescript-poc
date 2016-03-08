@@ -30,19 +30,18 @@
   },
   "devDependencies": {
     "concurrently": "2.0.0",
-    "lite-server": "2.1.0",
+    "del": "2.2.0",
     "gulp": "3.9.1",
     "gulp-sourcemaps": "1.6.0",
     "gulp-task-listing": "1.0.1",
     "gulp-typescript": "2.12.1",
+    "gulp-webserver": "0.9.1",
+    "rename": "1.0.3",
+    "run-sequence": "1.1.5",
     "typescript": "1.8.2",
-    "typings":"0.6.8"
+    "typings": "0.6.8"
   },
   "scripts": {
-    "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
-    "tsc": "tsc",
-    "tsc:w": "tsc -w",
-    "lite": "lite-server",
     "typings": "typings",
     "postinstall": "typings install"
   }
