@@ -43,3 +43,5 @@ A good article on all the current module loading libraries can be found [here][]
 
 ## Running the POC
 To view this POC locally, run `gulp build:develop`
+
+**Note: some of the styles have been commented out in favor of best practices**
